@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>MONKEYS</h1>
+
+{{#each cebus}}
+  <h3>{{this.species}}</h3>
+  <p>{{this.description}}</p>
+  <img class="monkeypic" src={{this.image_url}}>
+{{/each}}
+
+<p>
+  <a href="/create">Add a monkey!</a>
+</p>
