@@ -1,0 +1,8 @@
+<h3>Edit {{monkey.species}} details</h3>
+<form action="/{{monkey.id}}/edit" method="POST">
+  <input type="text" name="species" placeholder="Species" value="{{monkey.species}}">
+  <input type="text" name="image_url" placeholder="Image URL" value="{{monkey.image_url}}">
+  <input type="text" name="description" placeholder="Description" value="{{monkey.description}}">
+  <input type="text" name="cuteness_rating" placeholder="Cuteness Rating" value="{{monkey.cuteness_rating}}">
+  <button type="submit">Edit this monkey</button>
+</form>
