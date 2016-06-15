@@ -1,7 +1,7 @@
 <h1>MONKEYS</h1>
 
 {{#each cebus}}
-  <h3>{{this.species}}</h3>
+  <h3><a href="/{{this.id}}">{{this.species}}</a></h3>
   <p>{{this.description}}</p>
   <img class="monkeypic" src={{this.image_url}}>
 {{/each}}
